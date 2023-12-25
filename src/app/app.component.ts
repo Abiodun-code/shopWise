@@ -12,15 +12,4 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class AppComponent {
   title = 'shopWise';
-
-  navScroll:boolean = false;
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(){
-    if (window.scrollY <= 100) {
-      this.navScroll = true;
-    } else {
-      this.navScroll = false;
-    }
-  }
 }
